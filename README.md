@@ -18,13 +18,15 @@ The network predicts a 128 × 128 electric illuminance field in lux. In multi-lu
 
 ![MResUNet architecture](docs/assets/model_architecture.png)
 
-## Examples
+## Results from the paper
 
-Case 01 demonstrates a uniform illuminance target. Case 07 demonstrates different target levels for different parts of the room.
+The representative dimming response below is taken directly from Fig. 7(a) of the paper. It shows how the optimized total illuminance and luminaire dimming ratios respond to daylight changes during the day.
 
-![Case 01 demonstration](docs/assets/case01_comparison.png)
+![Representative dimming response from Fig. 7(a)](docs/assets/paper_fig7a_case15.png)
 
-![Case 07 personalized demonstration](docs/assets/case07_personalized_comparison.png)
+The personalized-target example is taken directly from Fig. 15. Different parts of the room use different illuminance targets, and the controller adjusts the luminaires accordingly.
+
+![Personalized target-based dimming response from Fig. 15](docs/assets/paper_fig15_personalized.png)
 
 ## Quick start
 

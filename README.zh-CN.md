@@ -18,13 +18,15 @@ LuxNet 是一个面向自然光与人工照明协同控制的深度学习项目�
 
 ![MResUNet 网络结构](docs/assets/model_architecture.png)
 
-## 示例案例
+## 论文结果展示
 
-Case 01 展示统一目标照度下的调光过程；Case 07 展示不同区域采用不同目标照度的个性化调光过程。
+下图直接采用论文 Fig. 7(a)，展示一天中自然光变化时，优化后的总照度分布和灯具调光比例如何随之调整。
 
-![Case 01 演示](docs/assets/case01_comparison.png)
+![论文 Fig. 7(a) 代表性调光结果](docs/assets/paper_fig7a_case15.png)
 
-![Case 07 分区目标演示](docs/assets/case07_personalized_comparison.png)
+下图直接采用论文 Fig. 15。房间不同区域设置不同目标照度，控制器据此调整各灯具输出。
+
+![论文 Fig. 15 个性化目标调光结果](docs/assets/paper_fig15_personalized.png)
 
 ## 快速运行
 
