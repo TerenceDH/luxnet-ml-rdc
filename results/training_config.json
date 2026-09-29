@@ -1,0 +1,50 @@
+{
+  "dataset": {
+    "train_ratio": 0.9,
+    "val_ratio": 0.1,
+    "cond_dim": 11
+  },
+  "network": {
+    "INPUT_NC": 3,
+    "OUTPUT_NC": 1,
+    "BASE_CH": 16,
+    "N_DOWN": 2,
+    "N_BLOCKS": 3,
+    "COND_HIDDEN_DIM": 64,
+    "FUSION_DIM": 64,
+    "USE_DROPOUT": true,
+    "DROPOUT_RATE": 0.1
+  },
+  "train": {
+    "NUM_EPOCHS": 3000,
+    "BATCH_SIZE": 8,
+    "LR_G": 0.0002,
+    "LR_G_MIN": 5e-05,
+    "LR_G_DECAY_START_EPOCH": 200,
+    "LR_G_DECAY_EPOCHS": 3000,
+    "WEIGHT_DECAY": 0.0001,
+    "SAVE_INTERVAL": 1,
+    "SAVE_EVERY_EPOCH": true,
+    "PRINT_FREQ": 200
+  },
+  "early_stop": {
+    "EARLY_STOP": true,
+    "PATIENCE_EPOCHS": 500,
+    "MIN_DELTA": 0.001
+  },
+  "loss": {
+    "LAMBDA_L1": 1.0,
+    "LUX_MAX": 1003.12,
+    "mask_erode_kernel": 7,
+    "tan_lux_median": 501.56,
+    "tan_lux_max": 1003.12,
+    "tan_sharpness": 0.95
+  },
+  "env": {
+    "SEED": 42,
+    "device": "cuda:0",
+    "cuda_available": true,
+    "torch_version": "2.5.1",
+    "numpy_version": "2.2.5"
+  }
+}

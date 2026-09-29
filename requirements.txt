@@ -1,0 +1,7 @@
+numpy>=1.24,<3
+torch>=2.5,<3
+torchvision>=0.20,<1
+tensorboard>=2.18,<3
+matplotlib>=3.7,<4
+Pillow>=10,<13
+scipy>=1.10,<2

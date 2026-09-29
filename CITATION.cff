@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper. Update this file after formal publication."
+title: "LuxNet ML RDC"
+type: software
+authors:
+  - family-names: Zeng
+    given-names: Qiang
+  - family-names: Wang
+    given-names: Tao
+  - family-names: Zhang
+    given-names: Yingying
+  - family-names: Zhu
+    given-names: Shaojun
+  - family-names: Xu
+    given-names: Junhao
+  - family-names: Zhao
+    given-names: Yushuai
+version: 0.1.0
+date-released: 2026-09-29
+preferred-citation:
+  type: article
+  title: "Real-Time Dimming Control of Integrated Daylight and Electric Lighting Systems Using a Multimodal Generative Surrogate Model"
+  authors:
+    - family-names: Zeng
+      given-names: Qiang
+    - family-names: Wang
+      given-names: Tao
+    - family-names: Zhang
+      given-names: Yingying
+    - family-names: Zhu
+      given-names: Shaojun
+    - family-names: Xu
+      given-names: Junhao
+    - family-names: Zhao
+      given-names: Yushuai

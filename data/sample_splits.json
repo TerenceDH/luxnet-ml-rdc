@@ -1,0 +1,36 @@
+{
+  "train": [
+    "sample_00000.npy",
+    "sample_00001.npy",
+    "sample_00003.npy",
+    "sample_00004.npy",
+    "sample_00005.npy",
+    "sample_00006.npy",
+    "sample_00007.npy",
+    "sample_00009.npy",
+    "sample_00010.npy",
+    "sample_00011.npy",
+    "sample_00012.npy",
+    "sample_00014.npy",
+    "sample_00015.npy",
+    "sample_00016.npy",
+    "sample_00017.npy",
+    "sample_00018.npy"
+  ],
+  "validation": [
+    "sample_03546.npy",
+    "sample_03547.npy",
+    "sample_03548.npy",
+    "sample_03550.npy"
+  ],
+  "test": [
+    "sample_00002.npy",
+    "sample_00008.npy",
+    "sample_00013.npy",
+    "sample_00026.npy",
+    "sample_00029.npy",
+    "sample_00047.npy",
+    "sample_00060.npy",
+    "sample_00079.npy"
+  ]
+}
