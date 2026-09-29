@@ -24,15 +24,15 @@ LuxNet 是一个面向自然光与人工照明协同控制的深度学习项目�
 
 ![MResUNet 网络结构](docs/assets/model_architecture.png)
 
-## 论文结果展示
+## 调光结果
 
-下图直接采用论文 Fig. 7(a)，展示一天中自然光变化时，优化后的总照度分布和灯具调光比例如何随之调整。
+控制器可根据自然光条件的变化调整灯具输出，同时维持所需的照度分布。
 
-![论文 Fig. 7(a) 代表性调光结果](docs/assets/paper_fig7a_case15.png)
+![自然光响应调光结果](docs/assets/dimming_response.png)
 
-下图直接采用论文 Fig. 15。房间不同区域设置不同目标照度，控制器据此调整各灯具输出。
+房间不同区域也可以设置不同的目标照度，使控制器能够满足个性化照明需求。
 
-![论文 Fig. 15 个性化目标调光结果](docs/assets/paper_fig15_personalized.png)
+![个性化目标调光结果](docs/assets/personalized_target_response.png)
 
 ## 快速运行
 
@@ -53,10 +53,10 @@ python demo.py --case case07 --personalized
 
 ## 完整数据和训练
 
-从 GitHub Release 下载 `luxnet_dataset_4000.zip`，然后运行：
+从 GitHub Release 下载 `luxnet_dataset.zip`，然后运行：
 
 ```bash
-python scripts/extract_dataset.py path/to/luxnet_dataset_4000.zip
+python scripts/extract_dataset.py path/to/luxnet_dataset.zip
 python evaluate.py --data data/full --splits data/splits.json --split test
 python train.py --data data/full --splits data/splits.json --output outputs/train_01
 ```

@@ -24,15 +24,15 @@ The network predicts a 128 × 128 electric illuminance field in lux. In multi-lu
 
 ![MResUNet architecture](docs/assets/model_architecture.png)
 
-## Results from the paper
+## Dimming results
 
-The representative dimming response below is taken directly from Fig. 7(a) of the paper. It shows how the optimized total illuminance and luminaire dimming ratios respond to daylight changes during the day.
+The controller adjusts luminaire output as daylight conditions change while maintaining the required illuminance distribution.
 
-![Representative dimming response from Fig. 7(a)](docs/assets/paper_fig7a_case15.png)
+![Daylight-responsive dimming result](docs/assets/dimming_response.png)
 
-The personalized-target example is taken directly from Fig. 15. Different parts of the room use different illuminance targets, and the controller adjusts the luminaires accordingly.
+Different parts of a room can also use different illuminance targets, allowing the controller to support personalized lighting requirements.
 
-![Personalized target-based dimming response from Fig. 15](docs/assets/paper_fig15_personalized.png)
+![Personalized target-based dimming result](docs/assets/personalized_target_response.png)
 
 ## Quick start
 
@@ -53,10 +53,10 @@ Generated files are written to `outputs/`.
 
 ## Full dataset and training
 
-Download `luxnet_dataset_4000.zip` from the GitHub release and extract it with:
+Download `luxnet_dataset.zip` from the GitHub release and extract it with:
 
 ```bash
-python scripts/extract_dataset.py path/to/luxnet_dataset_4000.zip
+python scripts/extract_dataset.py path/to/luxnet_dataset.zip
 ```
 
 Then run:

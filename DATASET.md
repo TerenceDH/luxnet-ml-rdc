@@ -27,7 +27,7 @@ window reflectance
 After downloading the release asset, extract it with:
 
 ```bash
-python scripts/extract_dataset.py path/to/luxnet_dataset_4000.zip
+python scripts/extract_dataset.py path/to/luxnet_dataset.zip
 ```
 
 The resulting files can be used directly by `train.py` and `evaluate.py` with the provided split file.
