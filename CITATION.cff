@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the associated paper. Update this file after formal publication."
+message: "If you use this software, please cite the associated paper."
 title: "LuxNet ML RDC"
 type: software
 authors:
@@ -19,7 +19,7 @@ version: 0.1.0
 date-released: 2026-09-29
 preferred-citation:
   type: article
-  title: "Real-Time Dimming Control of Integrated Daylight and Electric Lighting Systems Using a Multimodal Generative Surrogate Model"
+  title: "Real-time dimming control of integrated daylight and electric lighting systems using a multimodal generative surrogate model"
   authors:
     - family-names: Zeng
       given-names: Qiang
@@ -33,3 +33,7 @@ preferred-citation:
       given-names: Junhao
     - family-names: Zhao
       given-names: Yushuai
+  journal: "Building and Environment"
+  year: 2026
+  volume: "305"
+  doi: "10.1016/j.buildenv.2026.115203"

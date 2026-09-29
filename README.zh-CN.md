@@ -10,6 +10,12 @@ LuxNet 是一个面向自然光与人工照明协同控制的深度学习项目�
 
 本仓库提供从数据准备、模型训练、验证测试到照明优化案例的精简流程。
 
+## 论文信息
+
+本仓库对应以下论文：
+
+> Qiang Zeng, Tao Wang, Yingying Zhang, Shaojun Zhu, Junhao Xu, and Yushuai Zhao. **Real-time dimming control of integrated daylight and electric lighting systems using a multimodal generative surrogate model.** *Building and Environment*, 305, 115203, 2026. [DOI: 10.1016/j.buildenv.2026.115203](https://doi.org/10.1016/j.buildenv.2026.115203) · Web of Science 入藏号：`WOS:001874521300001`
+
 ## 方法简介
 
 代理模型采用多模态残差 U-Net。模型输入包括灯具位置、房间区域和窗户投影三个空间通道，以及描述房间、窗户、灯具和表面属性的 11 维物理条件向量。
@@ -78,5 +84,5 @@ evaluate.py   验证与测试入口
 demo.py       完整调光案例入口
 ```
 
-论文正式出版后，可在 `CITATION.cff` 中补充期刊和 DOI 信息。
+完整引用信息见 `CITATION.cff`。
 

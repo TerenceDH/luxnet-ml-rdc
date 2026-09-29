@@ -10,6 +10,12 @@ LuxNet is a deep-learning workflow for integrated daylight and electric-lighting
 
 The repository provides a compact workflow covering data preparation, model training, validation, testing, and lighting-control demonstrations.
 
+## Publication
+
+This repository accompanies the following paper:
+
+> Qiang Zeng, Tao Wang, Yingying Zhang, Shaojun Zhu, Junhao Xu, and Yushuai Zhao. **Real-time dimming control of integrated daylight and electric lighting systems using a multimodal generative surrogate model.** *Building and Environment*, 305, 115203, 2026. [DOI: 10.1016/j.buildenv.2026.115203](https://doi.org/10.1016/j.buildenv.2026.115203) · Web of Science accession number: `WOS:001874521300001`
+
 ## Method
 
 The surrogate model is a multimodal residual U-Net. It receives three spatial channels describing the luminaire position, room region, and window projection, together with an 11-value vector describing the room, window, luminaire, and surface properties.
@@ -83,5 +89,5 @@ evaluate.py   validation and test entry point
 demo.py       end-to-end dimming demonstration
 ```
 
-Citation information is provided in `CITATION.cff`. Journal and DOI information can be added after formal publication.
+Citation metadata is provided in `CITATION.cff`.
 
